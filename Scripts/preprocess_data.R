@@ -8,7 +8,7 @@ train <- fread("Data/train.csv", header = TRUE,
                select = c("Cliente_ID", "Producto_ID", "Agencia_ID",
                           "Semana", "Ruta_SAK", "Demanda_uni_equil"))
 test <- fread('Data//test.csv',header = TRUE,
-              select = c("Cliente_ID", "Producto_ID", "Agencia_ID",
+              select = c("id","Cliente_ID", "Producto_ID", "Agencia_ID",
                          "Semana", "Ruta_SAK"))
 head(train)
 
